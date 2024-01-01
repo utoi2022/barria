@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CURSO DE OPERADOR TACTICO DE UTOI</title>
+    <link rel="stylesheet" href="/style.css" type="">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <div class="row col-12">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid mx-4">
+              <a class="navbar-brand" href="#">U.T.O.I.</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">INICIO</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">BOLETIN INFORMATIVO</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      OPERACIONES
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">COMUNICACIONES</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">ESTADISTICAS</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Buscar">
+                  <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+      </div>
+<main>
+  <section class="section">
+    <label for="busqueda"><H2>BUSCAR DEPENDENCIA</H2></label>
+                <input type="text" id="busqueda" oninput="filtrarLista()" class="imput"placeholder="Escriba el nombre de una dependencia">
+                <ul id="listado" class="lu">
+                    <li class="boton">FBA 1 (LOMAS DE ZAMORA)</li>
+                    <li class="boton">FBA 2 (ALMIRANTE BROWN)</li>
+                    <li class="boton">FBA 3 (QUILMES)</li>
+                    <li class="boton">FBA 4 (FLORENCIO VARELA)</li>
+                    <li class="boton">FBA 5 (LA PLATA)</li>
+                    <li class="boton">FBA 6 (SAN MARTIN)</li>
+                    <li class="boton">FBA 7 (3 DE FEBRERO)</li>
+                    <li class="boton">FBA 8 (ITUZAINGO)</li>
+                    <li class="boton">FBA 9 (ESCOBAR)</li>
+                    <li class="boton">FBA 10 (MORON)</li>
+                    <li class="boton">FBA 11 (MERLO)</li>
+                    <li class="boton">FBA 12 (MORENO)</li>
+                    <li class="boton">FBA 13 (MAR DEL PLATA)</li>
+                    <li class="boton">FBA 14 (AVELLANEDA)</li>
+                    <li class="boton">FBA 15 (LANUS)</li>
+                    <li class="boton">FBA 16 (MALVINAS ARGENTINAS)</li>
+                    <li class="boton">DRI 2 SUBTENIENTE ZUCARELLI (LA MATANZA)</li>
+                    <li class="boton">JAGUAR (MATANZA)</li>
+                    <li class="boton">PATAMO (SAN MARTIN)</li>
+                    <li class="boton">ROP</li>
+                    <li class="boton">K9 (SAN MARTIN)</li>
+                    <li class="boton">APRT (LA MATANZA)</li>
+                    <li class="boton">TECNOLOGIA (LA MATANZA)</li>
+                    <li class="boton">DIRECCION (LA MATANZA)</li>
+                </ul>
+    </div>
+  </section>
+</main>
+</main>
+<main class="cont">
+  <section class="contenedor">
+    <div class="titulo">FBA 1 LOMAZ DE ZAMORA</div><!--llamada a la base--->
+    <div class="cargadatos">
+      <article class="contenedorinput">
+        <fieldset>
+          <legend><h2>ESTADISTICAS DE LA BASE</h2></legend>
+            <ul class="p">
+              <li class="separar"><label for="Jefe">JEFE</label><input type="text" id="Jefe" class="datos"></li><!--VARCHAR--->
+              <li class="separar"><label for="SegundoJefe">SEGUNDO JEFE</label><input type="text" id="SegundoJefe" class="datos"></li><!---VARCHAR-->
+              <li class="separar"><label for="JefedeTurno">JEFE DE TURNO</label><input type="text" id="JefedeTurno" class="datos"></li><!--VARCHAR--->
+              <li class="separar"><label for="OficialdeServicio">OFICIAL DE SERVICIO</label><input type="text" id="OficialdeServicio" class="datos"></li><!---VARCHAR-->
+              <li class="separar"><label for="EncargadodeGuardia">ENCARGADO DE GUARDIA </label><input type="text" id="EncargadodeGuardia" class="datos"></li><!---VARCHAR-->
+              <li class="separar"><label for="AyudantedeGuardia">AYUDANTE DE GUARDIA </label><input type="text" id="AyudantedeGuardia" class="datos"></li><!---VARCHAR-->
+              <li class="separar"><label for="NumeroContacto">NUMERO DE CELULAR DE CONTACTO</label><input type="text" id="NumeroContacto" class="datos"></li><!---INT-->
+              <li class="separar"><label for="FuerzaTotal">FUERZA TOTAL</label><input type="text" id="FuerzaTotal" class="datos"></li><!---INT-->
+              <li class="separar"><label for="FuerzaPresente">FUERZA PRESENTE</label><input type="text" id="FuerzaPresente" class="datos"></li><!---INT-->
+              <li class="separar"><label for="FuerzaAusente">FUERZA AUSENTE</label><input type="text" id="FuerzaAusente" class="datos"></li><!---INT-->
+              <li class="separar"><label for="RMH">RMH</label><input type="text" id="RMH" class="datos"></li><!---INT-->
+              <li class="separar"><label for="JPK">JPK</label><input type="text" id="JPK" class="datos"></li><!---INT-->
+              <li class="separar"><label for="Licencia">LICENCIA</label><input type="text" id="Licencia" class="datos"></li><!---INT-->
+              <li class="separar"><label for="PersonalRecargado">PERSONAL RECARGADO</label><input type="text" id="PersonalRecargado" class="datos"></li><!---INT-->
+              <li class="separar"><label for="Moviles">CANTIDAD DE MOVILES</label><input type="text" id="Moviles" class="datos"></li><!---INT-->
+              <li class="separar"><label for="Motos">CANTIDAD DE MOTOS</label><input type="text" id="Motos" class="datos"></li><!---INT-->
+              <li class="separar"><label for="Handys">CANTIDAD DE HANDYS</label><input type="text" id="Handys" class="datos"></li><!---INT-->
+              <li class="separar"><label for="MovilesOperativos">MOVILES OPERATIVOS</label><input type="text" id="MovilesOperativos" class="datos"></li><!---INT-->
+              <li class="separar"><label for="MotosOperativas">MOTOS OPERATIVAS</label><input type="text" id="MotosOperativas" class="datos"></li><!---INT-->
+              <li class="separar"><label for="HandysOperativos">HANDYS OPERATIVOS</label><input type="text" id="HandysOperativos" class="datos"></li><!---INT-->
+              <li class="separar"><label for="PersonaldeRecorrida">PERSONAL DE RECORRIDA </label><input type="text" id="PersonaldeRecorrida" class="datos"></li><!---INT-->
+          </ul>
+          </fieldset>
+        </article>
+        <article class="contenedorinputs">
+          <fieldset>
+            <legend><h2>ESTADISTICAS GENERALES</h2></legend>
+            <ul class="p">
+              <li class="separar"><label for="PersonaIdentificada">PERSONAS IDENTIFICADAS</label><input type="text" id="PersonaIdentificada" class="datos"></li><!---INT-->
+              <li class="separar"><label for="Aprehendidos">APREHENDIDOS</label><input type="text" id="Aprehendidos" class="datos"></li><!---INT-->
+              <li class="separar"><label for="Allanamientos">ALLANAMIENTOS/SERVICIOS</label><input type="text" id="Allanamientos" class="datos"></li><!---INT-->
+              <li class="separar"><label for="Investigaciones">INVESTIGACIONES EN CURSO</label><input type="text" id="Investigaciones" class="datos"></li><!---INT-->
+              <li class="separar"><label for="VehiculoIndentidicado">VEHICULOS IDENTIFICADOS</label><input type="text" id="VehiculoIndentidicado" class="datos"></li><!---INT-->
+              <li class="separar"><label for="MotoIdentificadas">MOTOS INDENTIFICADAS</label><input type="text" id="MotoIdentificadas" class="datos"></li><!---INT-->
+              <li class="separar"><label for="Colectivo">TRANSPORTES INTERCEPTADOS</label><input type="text" id="Colectivo" class="datos"></li><!---INT-->
+              <li class="separar"><label for="Contravenciones">CONTRAVENCIONES</label><input type="text" id="Contravenciones" class="datos"></li><!---INT-->
+              <li class="separar"><label for="VehiculosIncautadosInfraccion">VEHICULOS INCAUTADOS POR INFRACCION</label><input type="text" id="VehiculosIncautadosInfraccion" class="datos"></li><!---INT-->
+              <li class="separar"><label for="VehiculosIncautadosDelitos">VEHICULOS INCAUTADOS POR DELITOS</label><input type="text" id="VehiculosIncautadosDelitos" class="datos"></li><!---INT-->
+              <li class="separar"><label for="MotosIncautadasInfraccion">MOTOS INCAUTADAS POR INFRACCION</label><input type="text" id="MotosIncautadasInfraccion" class="datos"></li><!---INT-->
+              <li class="separar"><label for="MotosIncautadasDelitos">MOTOS INCAUTADAS POR DELITOS</label><input type="text" id="MotosIncautadasDelitos" class="datos"></li><!---INT-->
+              <li class="separar"><label for="Fierros">ARMAS DE FUEGO INCAUTADAS</label><input type="text" id="Fierros" class="datos"></li><!---INT-->
+              <li class="separar"><label for="Fakas">ARMAS BLANCAS INCAUTADAS</label><input type="text" id="Fakas" class="datos"></li><!---INT-->
+              <li class="separar"><label for="Cocaina">COCAINA INCAUTADA (grs)</label><input type="text" id="Cocaina" class="datos"></li><!---INT-->
+              <li class="separar"><label for="Porro">MARIHUANA INCAUTADA (grs)</label><input type="text" id="Porro" class="datos"></li><!---INT-->
+              <li class="separar"><label for="Paco">PACO INCAUTADO (grs)</label><input type="text" id="Pacp" class="datos"></li><!---INT-->
+              <li class="separar"><label for="DelitosEsclarecidos">DELITOS ESCLARECIDOS</label><input type="text" id="DelitosEsclarecidos" class="datos"></li><!---INT-->
+              <li class="separar"><label for="Capturas">CAPTURAS</label><input type="text" id="Capturas" class="datos"></li><!---INT-->
+          </ul>
+        </fieldset>
+      </article>
+    </div>
+    <div class="cargar">
+      <p><h3>!ADVERTENCIA¡</h3></p>
+      <p> EL ENCARGADO DE LLENAR ESTOS CAMPOS ES EL OFICIAL DE SERVICIO DE CADA BASE SELECCIONADA, SON LOS RESPONSABLES SI LAS ESTADISTICAS ESTAN MAL CARGADAS
+      </p>
+      <div class="botones">
+        
+        <div class="bt-modal">  
+            <label for="btn-modal">
+            VER ULTIMO P.U
+            </label>
+            </div>
+            <input type="checkbox" id="btn-modal">
+            <div class="container-modal">
+            <div class="conten-modal">
+                <div>
+                    <p>VER ULTIMO P.U CARGADO</p>
+                    <div class="previsualizar">
+                        <iframe src="" frameborder="0" class="pre"></iframe>
+                    </div>
+                    
+                </div>
+                <div class="btn-cerrar">
+                <label for="btn-modal">X</label>
+                </div>
+            </div>
+            </div>
+            <div class="bt-modal1">  
+                <label for="btn-modal1">
+                VER ULTIMO EXTRACTO
+                </label>
+                </div>
+                <input type="checkbox" id="btn-modal1">
+                <div class="container-modal1">
+                <div class="conten-modal1">
+                    <div>
+                        <p>VER UTLTIMO EXTRACTO CARGADO</p>
+                        <div class="previsualizar1">
+                            <iframe src="" frameborder="0" class="pre1"></iframe>
+                        </div>
+                        
+                    </div>
+                    <div class="btn-cerrar1">
+                    <label for="btn-modal1">X</label>
+                    </div>
+                </div>
+              </div>
+  </div>
+  </section>
+</main>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <script>
+      function filtrarLista() {
+        var filtro = document.getElementById('busqueda').value.toUpperCase();
+        var lista = document.getElementById('listado');
+        var elementos = lista.getElementsByTagName('li');
+  
+        // Si el campo de búsqueda está vacío, oculta el listado
+        if (filtro === '') {
+          lista.style.display = 'none';
+          return;
+        }
+  
+        // Muestra el listado y filtra según la búsqueda
+        lista.style.display = 'block';
+  
+        for (var i = 0; i < elementos.length; i++) {
+          var texto = elementos[i].textContent || elementos[i].innerText;
+          if (texto.toUpperCase().indexOf(filtro) > -1) {
+            elementos[i].style.display = '';
+          } else {
+            elementos[i].style.display = 'none';
+          }
+        }
+      }
+    </script>
+</body>
+</html>
