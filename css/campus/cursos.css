@@ -1,0 +1,23 @@
+*{
+    padding: 0px;
+}
+.navbar{
+    position: fixed !important;
+    z-index: 3  ;
+}
+
+.contieneArticle{
+    height: 100% !important;
+}
+
+.titulo{
+    color: #0A4100 !important;
+    text-align: center;
+    border-bottom: solid 2px #0A4100;
+}
+
+.descripcion{
+    text-align: start;
+    color: #a0a0a0fe;
+}
+

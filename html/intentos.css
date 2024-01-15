@@ -1,0 +1,89 @@
+.container1 {
+    width: 100%;
+    margin: 12px ;
+    overflow: hidden; /* Clearfix to contain floated columns */
+}
+
+.column {
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 20px; /* Espacio entre columnas apiladas */
+}
+
+.column1, .column2 {
+    width: 100%; /* Ambas columnas ocupan el 100% del ancho */
+}
+
+.column3 {
+    width: 79%; /* Puedes ajustar el ancho según tus necesidades */
+    float: right; /* Coloca la tercera columna a la derecha */
+}
+
+.column-container {
+    width: 20%;
+    float: left;
+    margin-right: 1%;
+}
+
+.busca{
+    height: 240px;
+    overflow-y: scroll;
+}
+.column2{
+    height: 550px;
+}
+.if{
+    height: 70%;
+}
+.lu{
+    display: none;
+    list-style: none;
+
+}
+
+.boton{
+    margin-top: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    color:  rgb(146, 146, 146);
+    transition: color 0.3s;
+}
+.boton:hover{
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 30px rgb(255, 255, 255)
+}
+
+.inner-column {
+    width: 49%;
+    float: left;
+    margin-right: 1%;
+}
+
+.separar {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .column1, .column2, .column3, .inner-column {
+        width: 100%;
+        float: none;
+        margin-right: 0;
+    }   
+
+    .column-container {
+        width: 100%;
+        float: none;
+        margin-right: 0;
+    }
+    .separar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

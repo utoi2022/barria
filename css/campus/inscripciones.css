@@ -1,0 +1,15 @@
+.offcanvas.offcanvas-bottom{
+    height: 45% !important;
+}
+
+@media (max-width: 600px){
+    .offcanvas.offcanvas-bottom{
+        height: 60% !important;
+    }
+}
+
+@media (max-width: 400px){
+    .offcanvas.offcanvas-bottom{
+        height: 67% !important;
+    }
+}

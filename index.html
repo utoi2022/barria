@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PROYECTO UTOI</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400;700&family=Saira+Stencil+One&display=swap"
+    rel="stylesheet">
+</head>
+
+<body id="top" class="dark_theme">
+  <header class="header" data-header>
+    <div class="container">
+      <h1 class="h1 logo">
+        <a href="#">U.T.O.I<span>.</span></a>
+      </h1>
+      <div class="navbar-actions">
+        <button class="theme-btn" aria-label="Change Theme" title="Change Theme" data-theme-btn>
+          <span class="icon"></span>
+        </button>
+      </div>
+      <button class="nav-toggle-btn" aria-label="Toggle Menu" title="Toggle Menu" data-nav-toggle-btn>
+        <span class="one"></span>
+        <span class="two"></span>
+        <span class="three"></span>
+      </button>
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+          <li>
+            <a href="#" class="navbar-link">INICIO</a>
+          </li>
+          <li>
+            <a href="#portfolio" class="navbar-link">GALERIA</a>
+          </li>
+          <li>
+            <a href="/html/campus/campusVirtual.html " class="navbar-link">CAMPUS VITUAL</a>
+          </li>
+          <li>
+            <div class="bt-modal">  
+            <label for="btn-modal" class="navbar-link">
+            OPERACIONES
+            </label>
+            </div>
+            <input type="checkbox" id="btn-modal">
+            <div class="container-modal">
+              <div class="conten-modal">
+                <iframe src="/html/login/carga.html" class="ifrane"><link rel="stylesheet" href="/css/login/carga.css" ></iframe>
+                <div class="btn-cerrar">
+                  <label for="btn-modal">X</label>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <a href="#contact" class="navbar-link">CONTACTO</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <article class="container">
+<br>
+      <section class="hero" id="home">
+        <figure class="hero-banner">
+          <picture>
+            <source srcset="/imagenes/inicio/hero-banner.gif" media="(min-width: 768px)">
+            <source srcset="/imagenes/inicio/hero-banner-md.gif" media="(min-width: 500px)">
+            <img src="/imagenes/inicio/hero-banner-sm.gif" alt=""
+              class="w-100">
+          </picture>
+
+        </figure>
+
+        <div class="hero-content">
+          <h2 class="h2 hero-title">SOMOS LA FUERZA INQUEBRANTABLE</h2>
+          <a href="https://forms.gle/fDH2FRTUujFApFto8" class="btn btn-primary">UNITE A NOSOTROS</a>
+        </div>
+        <ul class="hero-social-list">
+          <li>
+            <a href="#" class="hero-social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+              <div class="tooltip">Facebook</div>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="hero-social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+              <div class="tooltip">Twitter</div>
+            </a>
+          </li>
+        </ul>
+        <a href="#stats" class="scroll-down">BAJAR</a>
+      </section>
+      <section class="stats" id="stats">
+        <ul class="stats-list">
+          <li>
+            <a href="#" class="stats-card">
+              <div class="card-icon">
+                <img src="/imagenes/inicio/stats-card_icon-1.png" alt="Badge icon">
+              </div>
+              <h2 class="h2 card-title">
+                7+ <strong>AÑOS DE EXPERIENCIA</strong>
+              </h2>
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="stats-card">
+              <div class="card-icon">
+                <img src="/imagenes/inicio/stats-card_icon-2.png" alt="Checkmark icon">
+              </div>
+              <h2 class="h2 card-title">
+                230+ <strong>OBJETIVOS CUMPLIDOS</strong>
+              </h2>
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="stats-card">
+              <div class="card-icon">
+                <img src="/imagenes/inicio/stats-card_icon-3.png" alt="Peoples rating icon">
+              </div>
+              <h2 class="h2 card-title">
+                10M+ <strong>DE HOMBRES Y MUJERES CON TEMPLE DE ACERO</strong>
+              </h2>
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="about" id="about">
+        <figure class="about-banner">
+          <img src="/imagenes/inicio/about-banner.jpeg" alt="A man in a alice blue shirt with a thinking expression"
+            class="w-100">
+        </figure>
+        <div class="about-content section-content">
+          <p class="section-subtitle">SOBRE NOSOTROS</p>
+          <h2 class="h3 section-title">SOMOS LA FUERZA QUE ESTA PARA PROTEGERTE Y DEFENDERTE</h2>
+          <p class="section-text">
+            U.T.O.I es la unidad tactica de operaciones inmediata creada el 24 de marzo del 2017 bajo la resolucion N°719
+            Su funcion principal  se destaca en implementar y coordinar el desarrollo de las actividades operativas
+            dispuestas por la superioridad. supervisar el cumplimiento de los operativos llevados a cabo con moviles y motos
+            a fin de prevenir y disuadir cual tipo de delito que atenten contra la integridad y seguirdad publica
+          </p>
+          <div class="btn-group">
+            <button class="btn btn-secondary"><a href="https://forms.gle/fDH2FRTUujFApFto8" style="color: white;">UNITENOS</a></button>
+            <button class="btn btn-primary" id="miBoton">DESCARGAR MATERIAL DE ESTUDIO</button>
+
+            <div id="miModal" class="modal">
+              <div class="modal-contenido">
+                <span class="cerrar" onclick="cerrarModal()">&times;</span>
+                <p>ACA PODRAS DESCARGAR EL MATERIAL DE ESTUDIOS DE CADA CURSO QUE SE PUEDA ENCONTRAR EN NUESTRA INSTITUCION.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+      <section class="skills" id="skills">
+        <div class="skills-content section-content">
+          <p class="section-subtitle">Nuestros sectores</p>
+          <h2 class="h3 section-title">Cuales son nuestros entrenamientos?</h2>
+          <p class="section-text">
+            Nuestros entrenamientos nos abren paso para ser parte de
+            de las distintas especialidades que tenemos.
+            Podes ser parte del grupo Comando, Asalto, Tecnologico o de prevencion.
+          </p>
+          <div class="skills-toggle" data-toggle-box>
+            <button class="toggle-btn active" data-toggle-btn>CURSOS</button>
+            <button class="toggle-btn" data-toggle-btn>ESPECIALIDADES</button>
+          </div>
+        </div>
+        <div class="skills-box" data-skills-box>
+          <ul class="skills-list">
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">OPERADOR TACTICO</div>
+                <div class="card-icon">
+                  <img src="/imagenes/inicio/html5.png" alt="HTML5 logo">
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">ASISTENTE PREHISPITALARIO</div>
+                <div class="card-icon">
+                  <img src="/imagenes/inicio/css3.png" alt="CSS3 logo">
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">DEFENSA PERSONAL</div>
+                <div class="card-icon">
+                  <img src="/imagenes/inicio/javascript.png" alt="JavaScript logo">
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">COMBATE A CUARTO CERRADO</div>
+                <div class="card-icon">
+                  <img src="/imagenes/inicio/typescript.png" alt="TypeScript logo">
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">OPERADOR DE AGENTES DISUASIVOS</div>
+                <div class="card-icon">
+                  <img src="/imagenes/inicio/jquery.png" alt="jQuery logo">
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">FRANCOTIRADOR</div>
+                <div class="card-icon">
+                  <img src="/imagenes/inicio/bootstrap.png" alt="Bootstrap logo">
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">OPERADOR VANT</div>
+                <div class="card-icon">
+                  <img src="/imagenes/inicio/angular.png" alt="Angular logo">
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">GUIA DE PERROS POLICIAS</div>
+                <div class="card-icon">
+                  <img src="/imagenes/inicio/react.png" alt="React logo">
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">OPERACIONES MOTORIZADAS</div>
+
+                <div class="card-icon">
+                  <img src="/imagenes/inicio/vue.png" alt="Vue logo">
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">BRECHERO</div>
+                <div class="card-icon">
+                  <img src="/imagenes/inicio/firebase.png" alt="Firebase logo">
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">OPERADOR ROP</div>
+                <div class="card-icon">
+                  <img src="/imagenes/inicio/pugjs.png" alt="PugJs logo">
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">ESCOPETERO</div>
+                <div class="card-icon">
+                  <img src="/imagenes/inicio/sass.png" alt="SASS logo">
+                </div>
+              </div>
+            </li>
+          </ul>
+          <ul class="tools-list">
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">JAGUAR</div>
+                <div class="card-icon">
+                  <img src="/imagenes/inicio/ajax.png" alt="Ajax logo">
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">PATAMO</div>
+                <div class="card-icon">
+                  <img src="/imagenes/inicio/gulp.png" alt="Gulp logo">
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">ROP</div>
+                <div class="card-icon">
+                  <img src="/imagenes/inicio/webpack.png" alt="Webpack logo">
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">UTIF</div>
+                <div class="card-icon">
+                  <img src="/imagenes/inicio/git.png" alt="Git logo">
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">APRT</div>
+                <div class="card-icon">
+                  <img src="/imagenes/inicio/npm.png" alt="Npm logo">
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">K9</div>
+                <div class="card-icon">
+                  <img src="/imagenes/inicio/command.png" alt="Command Line logo">
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">TECNOLOGIA</div>
+                <div class="card-icon">
+                  <img src="/imagenes/inicio/vs-code.png" alt="VS Code logo">
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">MOTORIZADA</div>
+                <div class="card-icon">
+                  <img src="/imagenes/inicio/trello.png" alt="Trello logo">
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">FBA</div>
+                <div class="card-icon">
+                  <img src="/imagenes/inicio/clickup.png" alt="ClickUp logo">
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">NEGOCIADOR</div>
+                <div class="card-icon">
+                  <img src="/imagenes/inicio/slack.png" alt="Slack logo">
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="project" id="portfolio">
+        <ul class="project-list">
+          <li>
+            <div class="project-content section-content">
+              <p class="section-subtitle">NUESTRO TRABAJO</p>
+              <h2 class="h3 section-title">PUEDES VER NUESTRO TRABAJO EN ESTA GALERIA</h2>
+              <p class="section-text">
+               TODOS SOMOS UN EQUIPO QUE TRABAJA EN CONJUNTO
+               EN LOS DISTINTOS SERVICIOS, ILUSTRATE CON LAS IMAGENES
+               QUE TE VAMOS A DEJAR EN ESTA GALERIA PARA QUE VEAS
+               COMO ES NUESTRO TRABAJO Y QUE HACEMOS
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="project-card">
+              <figure class="card-banner">
+                <img src="/imagenes/inicio/project-1.png" class="w-100" alt="A macintosh on a yellow background.">
+              </figure>
+              <div class="card-content">
+                <h3 class="h4 card-title">Lorem Ipsum Dolor 01</h3>
+                <time class="publish-date" datetime="2022-04">April 2022</time>
+              </div>
+            <div>
+          </li>
+          <li>
+            <div class="project-card">
+              <figure class="card-banner">
+                <img src="/imagenes/inicio/project-2.png" class="w-100" alt="On a Blue background, a Wacom and a mouse.">
+              </figure>
+              <div class="card-content">
+                <h3 class="h4 card-title">Lorem Ipsum Dolor 02</h3>
+                <time class="publish-date" datetime="2022-04">April 2022</time>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="project-card">
+              <figure class="card-banner">
+                <img src="/imagenes/inicio/project-3.png" class="w-100"
+                  alt="A Cassette tape on a mellow apricot background.">
+              </figure>
+              <div class="card-content">
+                <h3 class="h4 card-title">Lorem Ipsum Dolor 03</h3>
+                <time class="publish-date" datetime="2022-04">April 2022</time>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div  class="project-card">
+              <figure class="card-banner">
+                <img src="/imagenes/inicio/project-4.png" class="w-100"
+                  alt="Blue digital watch on a dark liver background.">
+              </figure>
+              <div class="card-content">
+                <h3 class="h4 card-title">Lorem Ipsum Dolor 04</h3>
+                <time class="publish-date" datetime="2022-04">April 2022</time>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div  class="project-card">
+              <figure class="card-banner">
+                <img src="/imagenes/inicio/project-5.png" class="w-100"
+                  alt="On a dark liver background, Airport luggage car carrying a luggage.">
+              </figure>
+              <div class="card-content">
+                <h3 class="h4 card-title">Lorem Ipsum Dolor 05</h3>
+                <time class="publish-date" datetime="2022-04">April 2022</time>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div  class="project-card">
+              <figure class="card-banner">
+                <img src="/imagenes/inicio/project-6.png" class="w-100"
+                  alt="On a yellow background, a digital watch and a glass.">
+              </figure>
+              <div class="card-content">
+                <h3 class="h4 card-title">Lorem Ipsum Dolor 06</h3>
+                <time class="publish-date" datetime="2022-04">April 2022</time>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div  class="project-card">
+              <figure class="card-banner">
+                <img src="/imagenes/inicio/project-7.png" class="w-100"
+                  alt="A fujifilm instant camera on a dark electric blue background.">
+              </figure>
+              <div class="card-content">
+                <h3 class="h4 card-title">Lorem Ipsum Dolor 07</h3>
+                <time class="publish-date" datetime="2022-04">April 2022</time>
+              </div>
+            </div>
+          </li>
+          <li>
+            <a href="#" class="load-more">VER MAS FOTOS</a>
+          </li>
+        </ul>
+      </section>
+      <section class="contact" id="contact">
+        <div class="contact-content section-content">
+          <p class="section-subtitle">Contacto</p>
+          <h2 class="h3 section-title">QUERES UNIRTE?, MANDANOS TU SOLICITUD</h2>
+          <p class="section-text">
+            TENE LA POSIBILIDAD DE PODER AYUDARNOS Y SER PARTE DE LA FUERZA
+          </p>
+          <ul class="contact-list">
+            <li class="contact-list-item">
+              <div class="contact-item-icon">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+              <div class="wrapper">
+                <h3 class="h4 contact-item-title">DIRECCION</h3>
+                <address class="contact-info">
+                  Camino de la virgen, ciudad evita, La Matanza, Buenos Aires Argentina
+                </address>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3279.217739512527!2d-58.51797582493668!3d-34.72490556390737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccf460b37f3cd%3A0xdd6765ea03108300!2sUTOI!5e0!3m2!1ses-419!2sar!4v1699873700787!5m2!1ses-419!2sar" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </li>
+            <li class="contact-list-item">
+              <div class="contact-item-icon">
+                <ion-icon name="call-outline"></ion-icon>
+              </div>
+              <div class="wrapper">
+                <h3 class="h4 contact-item-title">CELULAR</h3>
+                <a href="tel:01234567789" class="contact-info">(01) 234 567 789</a>
+                <a href="tel:09765432200" class="contact-info">(09) 765 432 200</a>
+              </div>
+            </li>
+            <li class="contact-list-item">
+              <div class="contact-item-icon">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+              <div class="wrapper">
+                <h3 class="h4 contact-item-title">CORREO</h3>
+                <a href="mailto:info@jack.com" class="contact-info">UTOIFUERZASESPECIALES@GMAIL.COM</a>
+                <a href="mailto:support@jack.com" class="contact-info">CAPACITACIONUTOI@GMAIL.COM</a>
+              </div>
+            </li>
+            <li>
+              <ul class="contac-social-list">
+                <li>
+                  <a href="#" class="contact-social-link">
+                    <div class="tooltip">Facebook</div>
+                    <ion-icon name="logo-facebook"></ion-icon>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="contact-social-link">
+                    <div class="tooltip">INSTAGRAM</div>
+                    <ion-icon name="logo-twitter"></ion-icon>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="contact-social-link">
+                    <div class="tooltip">YOUTUBE</div>
+                    <ion-icon name="logo-youtube"></ion-icon>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <form action="" class="contact-form">
+          <label class="form-label" id="COMENT">DEJANOS TU COMENTARIO</label>
+          <div class="form-wrapper">
+            <label for="name" class="form-label">NOMBRE Y APELLIDO</label>
+            <div class="input-wrapper">
+              <input type="text" name="name" id="name" required placeholder="e.g John Doe" class="input-field">
+              <ion-icon name="person-circle"></ion-icon>
+            </div>
+          </div>
+          <div class="form-wrapper">
+            <label for="email" class="form-label">CORREO</label>
+            <div class="input-wrapper">
+              <input type="email" name="email" id="email" required placeholder="correo electronico"
+                class="input-field">
+              <ion-icon name="mail"></ion-icon>
+            </div>
+          </div>
+          <div class="form-wrapper">
+            <label for="phone" class="form-label">CELULAR</label>
+            <div class="input-wrapper">
+              <input type="tel" name="phone" id="phone" required placeholder="celular" class="input-field">
+              <ion-icon name="call"></ion-icon>
+            </div>
+          </div>
+          <div class="form-wrapper">
+          <label for="message" class="form-label">ESCRIBE TU OPINION SOBRE NOSOTROS</label>
+            <div class="input-wrapper">
+              <textarea name="message" id="message" required placeholder="Escriba el mensaje"
+                class="input-field"></textarea>
+              <ion-icon name="chatbubbles"></ion-icon>
+
+            </div>
+
+          </div>
+
+          <button type="submit" class="btn btn-primary">ENVIAR</button>
+
+        </form>
+
+      </section>
+
+    </article>
+  </main>
+<a href="/html/oper/index.html">admin</a>
+<a href="/html/oper/carga.html">carga</a>
+
+
+
+
+  <!--
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container">
+
+      <p class="h1 logo">
+        <a href="#">
+         U.T.O.I<span>.</span>
+        </a>
+      </p>
+
+
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!--
+    - #GO TO TOP
+  -->
+
+  <a href="#top" class="go-top" data-go-top title="Go to Top">
+    <ion-icon name="arrow-up"></ion-icon>
+  </a>
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

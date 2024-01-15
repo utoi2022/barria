@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./intentos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container1">
+        <div class="column-container">
+            <div class="column column1">
+            <section class="busca">
+              <label for="busqueda"><H2>BUSCAR DEPENDENCIA</H2></label>
+                <input type="text" id="busqueda" oninput="filtrarLista()" class="imput"placeholder="Escriba el nombre de una dependencia">
+                    <div class="barra">
+                        <ul id="listado" class="lu">
+                            <li class="boton">FBA 1 (LOMAS DE ZAMORA)</li>
+                            <li class="boton">FBA 2 (ALMIRANTE BROWN)</li>
+                            <li class="boton">FBA 3 (QUILMES)</li>
+                            <li class="boton">FBA 4 (FLORENCIO VARELA)</li>
+                            <li class="boton">FBA 5 (LA PLATA)</li>
+                            <li class="boton">FBA 6 (SAN MARTIN)</li>
+                            <li class="boton">FBA 7 (3 DE FEBRERO)</li>
+                            <li class="boton">FBA 8 (ITUZAINGO)</li>
+                            <li class="boton">FBA 9 (ESCOBAR)</li>
+                            <li class="boton">FBA 10 (MORON)</li>
+                            <li class="boton">FBA 11 (MERLO)</li>
+                            <li class="boton">FBA 12 (MORENO)</li>
+                            <li class="boton">FBA 13 (MAR DEL PLATA)</li>
+                            <li class="boton">FBA 14 (AVELLANEDA)</li>
+                            <li class="boton">FBA 15 (LANUS)</li>
+                            <li class="boton">FBA 16 (MALVINAS ARGENTINAS)</li>
+                            <li class="boton">DRI 2 SUBTENIENTE ZUCARELLI (LA MATANZA)</li>
+                            <li class="boton">JAGUAR (MATANZA)</li>
+                            <li class="boton">PATAMO (SAN MARTIN)</li>
+                            <li class="boton">ROP</li>
+                            <li class="boton">K9 (SAN MARTIN)</li>
+                            <li class="boton">APRT (LA MATANZA)</li>
+                            <li class="boton">TECNOLOGIA (LA MATANZA)</li>
+                            <li class="boton">DIRECCION (LA MATANZA)</li>
+                        </ul>
+                    </div>
+            </section>
+            </div>  
+            <div class="column column2">
+                <Legend>
+                    <H1>ADVERTENCIA</H1>
+                    <p>ESTOS CAMPOS SON ACTUALIZADO DIARAMENTE.</p>
+                    <P>EL RESPONSABLE DE ACTUALIZAR ESTOS DATOS ES EL OFICIAL DE SERVICIO DE LA DEPENDENCIA SELECCIONADA.</P>
+                    <P>PROXIMAMENTE PODRA VER FECHA Y HORA CARGADA DE LOS DATOS, PARA CORROBORAR QUE SE ESTE ACTUALIZANDO COMO SE DEBE </P>
+                </Legend>
+              </div>
+        </div>
+        <div class="column column3">
+            <legend id="dependencia">DEPENDENCIA</legend>
+            <div class="inner-column">
+                <lEgend>ESTADISTICAS DE LA BASE</lEgend>
+                <div class="EST-BA">
+                    <ul>
+                        <li class="separar"><label for="Jefe">JEFE</label><input type="text" id="Jefe" class="datos" disabled></li><!--VARCHAR--->
+                        <li class="separar"><label for="SegundoJefe">SEGUNDO JEFE</label><input type="text" id="SegundoJefe" class="datos" disabled></li><!---VARCHAR-->
+                        <li class="separar"><label for="JefedeTurno">JEFE DE TURNO</label><input type="text" id="JefedeTurno" class="datos" disabled></li><!--VARCHAR--->
+                        <li class="separar"><label for="OficialdeServicio">OFICIAL DE SERVICIO</label><input type="text" id="OficialdeServicio" class="datos" disabled></li><!---VARCHAR-->
+                        <li class="separar"><label for="EncargadodeGuardia">ENCARGADO DE GUARDIA </label><input type="text" id="EncargadodeGuardia" class="datos" disabled></li><!---VARCHAR-->
+                        <li class="separar"><label for="AyudantedeGuardia">AYUDANTE DE GUARDIA </label><input type="text" id="AyudantedeGuardia" class="datos" disabled></li><!---VARCHAR-->
+                        <li class="separar"><label for="NumeroContacto">NUMERO DE CELULAR DE CONTACTO</label><input type="text" id="NumeroContacto" class="datos" disabled></li><!---INT-->
+                        <li class="separar"><label for="FuerzaTotal">FUERZA TOTAL</label><input type="text" id="FuerzaTotal" class="datos" disabled></li><!---INT-->
+                        <li class="separar"><label for="FuerzaPresente">FUERZA PRESENTE</label><input type="text" id="FuerzaPresente" class="datos" disabled></li><!---INT-->
+                        <li class="separar"><label for="FuerzaAusente">FUERZA AUSENTE</label><input type="text" id="FuerzaAusente" class="datos" disabled></li><!---INT-->
+                        <li class="separar"><label for="RMH">RMH</label><input type="text" id="RMH" class="datos" disabled></li><!---INT-->
+                        <li class="separar"><label for="JPK">JPK</label><input type="text" id="JPK" class="datos" disabled></li><!---INT-->
+                        <li class="separar"><label for="Licencia">LICENCIA</label><input type="text" id="Licencia" class="datos" disabled></li><!---INT-->
+                        <li class="separar"><label for="PersonalRecargado">PERSONAL RECARGADO</label><input type="text" id="PersonalRecargado" class="datos" disabled></li><!---INT-->
+                        <li class="separar"><label for="Moviles">CANTIDAD DE MOVILES</label><input type="text" id="Moviles" class="datos" disabled></li><!---INT-->
+                        <li class="separar"><label for="Motos">CANTIDAD DE MOTOS</label><input type="text" id="Motos" class="datos" disabled></li><!---INT-->
+                        <li class="separar"><label for="Handys">CANTIDAD DE HANDYS</label><input type="text" id="Handys" class="datos" disabled></li><!---INT-->
+                        <li class="separar"><label for="MovilesOperativos">MOVILES OPERATIVOS</label><input type="text" id="MovilesOperativos" class="datos" disabled></li><!---INT-->
+                        <li class="separar"><label for="MotosOperativas">MOTOS OPERATIVAS</label><input type="text" id="MotosOperativas" class="datos" disabled></li><!---INT-->
+                        <li class="separar"><label for="HandysOperativos">HANDYS OPERATIVOS</label><input type="text" id="HandysOperativos" class="datos" disabled></li><!---INT-->
+                        <li class="separar"><label for="PersonaldeRecorrida">PERSONAL DE RECORRIDA </label><input type="text" id="PersonaldeRecorrida" class="datos" disabled></li><!---INT-->
+                    </ul>
+                </div>
+            </div>
+            <div class="inner-column">
+                <LEGend>ESTADISTICAS GENERALES </LEGend>
+                <div class="EST-GEN">
+                    <ul>
+                    <li class="separar"><label for="PersonaIdentificada">PERSONAS IDENTIFICADAS</label><input type="text" id="PersonaIdentificada" class="datos"disabled></li><!---INT-->
+                    <li class="separar"><label for="Aprehendidos">APREHENDIDOS</label><input type="text" id="Aprehendidos" class="datos"disabled></li><!---INT-->
+                    <li class="separar"><label for="Allanamientos">ALLANAMIENTOS/SERVICIOS</label><input type="text" id="Allanamientos" class="datos"disabled></li><!---INT-->
+                    <li class="separar"><label for="Investigaciones">INVESTIGACIONES EN CURSO</label><input type="text" id="Investigaciones" class="datos"disabled></li><!---INT-->
+                    <li class="separar"><label for="VehiculoIndentidicado">VEHICULOS IDENTIFICADOS</label><input type="text" id="VehiculoIndentidicado" class="datos"disabled></li><!---INT-->
+                    <li class="separar"><label for="MotoIdentificadas">MOTOS INDENTIFICADAS</label><input type="text" id="MotoIdentificadas" class="datos"disabled></li><!---INT-->
+                    <li class="separar"><label for="Colectivo">TRANSPORTES INTERCEPTADOS</label><input type="text" id="Colectivo" class="datos"disabled></li><!---INT-->
+                    <li class="separar"><label for="Contravenciones">CONTRAVENCIONES</label><input type="text" id="Contravenciones" class="datos"disabled></li><!---INT-->
+                    <li class="separar"><label for="VehiculosIncautadosInfraccion">VEHICULOS INCAUTADOS POR INFRACCION</label><input type="text" id="VehiculosIncautadosInfraccion" class="datos"disabled></li><!---INT-->
+                    <li class="separar"><label for="VehiculosIncautadosDelitos">VEHICULOS INCAUTADOS POR DELITOS</label><input type="text" id="VehiculosIncautadosDelitos" class="datos"disabled></li><!---INT-->
+                    <li class="separar"><label for="MotosIncautadasInfraccion">MOTOS INCAUTADAS POR INFRACCION</label><input type="text" id="MotosIncautadasInfraccion" class="datos"disabled></li><!---INT-->
+                    <li class="separar"><label for="MotosIncautadasDelitos">MOTOS INCAUTADAS POR DELITOS</label><input type="text" id="MotosIncautadasDelitos" class="datos"disabled></li><!---INT-->
+                    <li class="separar"><label for="Fierros">ARMAS DE FUEGO INCAUTADAS</label><input type="text" id="Fierros" class="datos"disabled></li><!---INT-->
+                    <li class="separar"><label for="Fakas">ARMAS BLANCAS INCAUTADAS</label><input type="text" id="Fakas" class="datos"disabled></li><!---INT-->
+                    <li class="separar"><label for="Cocaina">COCAINA INCAUTADA (grs)</label><input type="text" id="Cocaina" class="datos"disabled></li><!---INT-->
+                    <li class="separar"><label for="Porro">MARIHUANA INCAUTADA (grs)</label><input type="text" id="Porro" class="datos"disabled></li><!---INT-->
+                    <li class="separar"><label for="Paco">PACO INCAUTADO (grs)</label><input type="text" id="Pacp" class="datos"disabled></li><!---INT-->
+                    <li class="separar"><label for="DelitosEsclarecidos">DELITOS ESCLARECIDOS</label><input type="text" id="DelitosEsclarecidos" class="datos"disabled></li><!---INT-->
+                    <li class="separar"><label for="Capturas">CAPTURAS</label><input type="text" id="Capturas" class="datos"disabled></li><!---INT-->
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+
+    <!---scripts-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <script>
+      function filtrarLista() {
+        var filtro = document.getElementById('busqueda').value.toUpperCase();
+        var lista = document.getElementById('listado');
+        var elementos = lista.getElementsByTagName('li');
+  
+        // Si el campo de búsqueda está vacío, oculta el listado
+        if (filtro === '') {
+          lista.style.display = 'none';
+          return;
+        }
+  
+        // Muestra el listado y filtra según la búsqueda
+        lista.style.display = 'block';
+  
+        for (var i = 0; i < elementos.length; i++) {
+          var texto = elementos[i].textContent || elementos[i].innerText;
+          if (texto.toUpperCase().indexOf(filtro) > -1) {
+            elementos[i].style.display = '';
+          } else {
+            elementos[i].style.display = 'none';
+          }
+        }
+      }
+    </script>
+</body>
+</html>
